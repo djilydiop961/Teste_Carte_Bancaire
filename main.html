@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript" src="principal.js"></script>
+
+<script type="text/javascript">
+/*
+	**teste sur une carte visa
+*/
+		var mabanque = new Banque("1512345678945615");
+
+		//document.write(mabanque.verifi.numerocarte);
+
+		mabanque.verifi = new visa(mabanque.verifi.numerocarte);
+	//	mabanque.verificateur.Vérifiercarte();
+
+		if(mabanque.verifi.Vérifiercarte()){
+			document.write("c'est une carte VISA");
+		}else{
+			document.write("c'est une autre carte");
+		};
+</script>
+</body>
+</html>

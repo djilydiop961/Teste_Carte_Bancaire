@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript" src="principal.js"></script>
+
+<script type="text/javascript">
+/*
+	**teste sur une carte american_express
+*/
+		var mabanque = new Banque("15451234567894561");
+
+		//document.write(mabanque.verifi.numerocarte);
+
+		mabanque.verifi = new american_express(mabanque.verifi.numerocarte);
+	//	mabanque.verificateur.Vérifiercarte();
+
+		if(mabanque.verifi.Vérifiercarte()){
+			document.write("c'est une carte AMERICAN_EXPRESS");
+		}else{
+			document.write("c'est une autre carte");
+		};
+</script>
+</body>
+</html>

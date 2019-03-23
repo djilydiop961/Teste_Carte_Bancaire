@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript" src="principal.js"></script>
+
+<script type="text/javascript">
+/*
+	**teste sur une carte mastercard
+*/
+		var mabanque = new Banque("151234567894561");
+
+		//document.write(mabanque.verifi.numerocarte);
+
+		mabanque.verifi = new mastercard(mabanque.verifi.numerocarte);
+	//	mabanque.verificateur.Vérifiercarte();
+
+		if(mabanque.verifi.Vérifiercarte()){
+			document.write("c'est une carte MASTERCARD");
+		}else{
+			document.write("c'est une autre carte");
+		};
+</script>
+</body>
+</html>
